@@ -2,10 +2,6 @@
 AI-Powered Research Paper Analyzer that extracts and analyzes PDF research papers using Cohere NLP. Generates summaries, key findings, terminology explanations, citations, and questions through a simple Streamlit interface for faster understanding of academic content.
 AI-Powered Research Paper Analyzer that extracts and analyzes PDF research papers using Cohere NLP. Generates summaries, key findings, terminology explanations, citations, and questions through a simple Streamlit interface for faster understanding of academic content.
 
-AI-Powered Research Paper Analyzer
-
-An advanced Streamlit-based web application that analyzes academic research papers using Cohere’s NLP capabilities.
-
 📘 Overview
 
 The AI-Powered Research Paper Analyzer is a machine-assisted academic tool designed to simplify the reading and interpretation of research papers. Users can upload any PDF research paper, and the system automatically extracts, processes, and analyzes the content using Cohere’s NLP model.
