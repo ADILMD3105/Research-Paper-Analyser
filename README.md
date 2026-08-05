@@ -1,98 +1,120 @@
-# Research-Paper-Analyser
-AI-Powered Research Paper Analyzer that extracts and analyzes PDF research papers using Cohere NLP. Generates summaries, key findings, terminology explanations, citations, and questions through a simple Streamlit interface for faster understanding of academic content.
-AI-Powered Research Paper Analyzer that extracts and analyzes PDF research papers using Cohere NLP. Generates summaries, key findings, terminology explanations, citations, and questions through a simple Streamlit interface for faster understanding of academic content.
+# 📄 Research Paper Analyzer
 
-📘 Overview
+An AI-powered research paper analysis tool that extracts text from PDF research papers and leverages Cohere's NLP models to generate summaries, key findings, terminology explanations, citations, and critical thinking questions through an interactive Streamlit interface.
 
-The AI-Powered Research Paper Analyzer is a machine-assisted academic tool designed to simplify the reading and interpretation of research papers. Users can upload any PDF research paper, and the system automatically extracts, processes, and analyzes the content using Cohere’s NLP model.
+---
 
-The goal is to reduce the time needed to understand complex research by producing concise summaries, identifying key findings, explaining terminology, extracting citations, and generating critical questions—all from a clean and interactive Streamlit interface.
+## 🚀 Features
 
-This project is ideal for students, researchers, educators, project developers, or anyone who wants to understand research papers faster and more accurately.
+- Upload and analyze research papers in PDF format
+- AI-generated summaries for faster understanding
+- Extract key findings and research contributions
+- Explain complex technical terminology
+- Generate critical thinking questions
+- Extract citations and references
+- Display metadata including title and authors
+- Interactive tab-based Streamlit interface
+- Modular architecture for easy maintenance and extension
 
-✨ Key Features
+---
 
-Upload research papers in PDF format
+## 🛠 Tech Stack
 
-Automated text extraction from multi-page PDFs
+- **Python**
+- **Streamlit**
+- **Cohere API**
+- **pdfplumber**
+- **python-dotenv**
 
-AI-generated summary of the research paper
+---
 
-Extraction of key findings, insights, and contributions
+## ⚙️ Project Workflow
 
-Simplified technical term explanations
+```text
+Upload PDF
+      │
+      ▼
+Extract Text (pdfplumber)
+      │
+      ▼
+Process with Cohere NLP
+      │
+      ├── Summary
+      ├── Key Findings
+      ├── Terminology
+      ├── Questions
+      └── Citations
+      │
+      ▼
+Display Results in Streamlit
+```
 
-Automatic detection of citations and references
+---
 
-Generation of critical thinking questions
+## 📂 Project Structure
 
-Metadata extraction (title, authors, keywords, etc.)
+```
+Research-Paper-Analyzer/
+│
+├── app.py
+├── analyzer.py
+├── requirements.txt
+├── .env
+├── README.md
+└── assets/
+```
 
-Clean, organized Streamlit interface with tabs
+---
 
-Integrated caching to reduce API calls and improve performance
+## ▶️ Installation
 
-Modular, clean, and expandable codebase
+Clone the repository
 
-🧠 How It Works
+```bash
+git clone https://github.com/yourusername/research-paper-analyzer.git
+cd research-paper-analyzer
+```
 
-The system follows a simple but powerful workflow:
+Install dependencies
 
-Upload PDF File
-The user selects any research paper in PDF format.
+```bash
+pip install -r requirements.txt
+```
 
-Text Extraction
-The backend uses pdfplumber to extract text page-by-page, removing noise and formatting errors.
+Create a `.env` file and add your Cohere API key.
 
-AI Processing (Cohere NLP)
-Extracted text is sent to Cohere’s NLP model for:
+```env
+COHERE_API_KEY=your_api_key
+```
 
-Summarization
+Run the application
 
-Key findings extraction
+```bash
+streamlit run app.py
+```
 
-Terminology explanation
+---
 
-Question generation
+## 🎯 Use Cases
 
-Citation detection
+- Students reviewing academic papers
+- Researchers performing literature reviews
+- Faculty and educators
+- Final-year project research
+- Learning unfamiliar research topics
 
-Organized Output
-Streamlit displays the processed results under separate tabs:
+---
 
-Metadata
+## 📌 Future Improvements
 
-Summary
+- Support multiple LLM providers
+- Multi-document comparison
+- Semantic search across uploaded papers
+- Export analysis as PDF or DOCX
+- Citation graph visualization
 
-Key Findings
+---
 
-Terminology
+## 📄 License
 
-Questions
-
-Citations
-
-User Interaction
-The app provides an easy-to-use interface suitable for assignments, research work, and academic study.
-
-🔧 Tech Stack
-Programming Language
-
-Python 3.10+
-
-Libraries & Frameworks
-
-Streamlit (Web UI)
-
-pdfplumber (PDF Parsing)
-
-Cohere API (NLP Engine)
-
-python-dotenv (Secret management)
-
-Standard Python libraries (os, re, json)
-
-
-Jupyter Notebook (optional)
-
-Git / GitHub
+This project is intended for educational and research purposes.
